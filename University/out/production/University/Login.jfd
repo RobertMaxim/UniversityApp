@@ -1,0 +1,116 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {comp jPanel1:::p:657:p, space :0:0:x}}"
+			"$verticalGroup": "par l {comp jPanel1::l::433:x}"
+		} ) {
+			name: "this2"
+			"defaultCloseOperation": 3
+			"resizable": false
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Images/unive.jpg" )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "jPanel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel2"
+					"text": "Username :"
+					"background": sfield java.awt.Color white
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 20
+					"y": 280
+					"width": 70
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel3"
+					"text": "Password :"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 20
+					"y": 315
+					"width": 65
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jButton3"
+					"text": "Inregistreaza-te"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -1, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton3", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton3", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "register", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "register", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "register", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 130
+					"x": 195
+					"y": 385
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "jButton1"
+					"text": "Logheaza-te"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -2, false )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "jButton1ActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 385
+					"width": 130
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txt_username"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 270
+					"width": 160
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "txt_password"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 310
+					"width": 160
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "txt_combo"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Admin"
+						addElement( "Admin" )
+						addElement( "Student" )
+						addElement( "Profesor" )
+					}
+					auxiliary() {
+						"JavaCodeGenerator.typeParameters": "String"
+					}
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 90
+					"y": 350
+					"width": 160
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel4"
+					"text": "State: "
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 20
+					"y": 355
+					"width": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/bk4.jpg" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"width": 660
+					"height": 435
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 655, 465 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

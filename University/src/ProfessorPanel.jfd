@@ -1,0 +1,330 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par l {seq {comp searchBar:::p:397:p, space :::p, comp button8:::p::p, space :0:62:x}, comp scrollPane1::l:::x}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :p:11:p, par l:::p {comp searchBar:::::x, comp button8:::::x}, space :p:32:p, comp scrollPane1:::p:241:p, space ::52:x}}"
+		} ) {
+			name: "panel2"
+			"border": new javax.swing.border.BevelBorder( 1, null, null, null, null )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "searchList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchBar"
+				"toolTipText": "Search"
+				"name": "Search"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button8"
+				"text": "Search"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/Search_Icon_16.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButton", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 575, 455 )
+			"size": new java.awt.Dimension( 570, 370 )
+		} )
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp splitPane1::l::748:x}"
+			"$verticalGroup": "par l {comp splitPane1::l:::x}"
+		} ) {
+			name: "this2"
+			"defaultCloseOperation": 2
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/Images/unive.jpg" )
+			"title": "University"
+			"minimumSize": new java.awt.Dimension( 500, 470 )
+			add( new FormContainer( "javax.swing.JSplitPane", new FormLayoutManager( class javax.swing.JSplitPane ) ) {
+				name: "splitPane1"
+				"dividerLocation": 210
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"dividerSize": 4
+				"preferredSize": new java.awt.Dimension( 500, 350 )
+				"minimumSize": new java.awt.Dimension( 500, 350 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {par t:l::p {comp orar::::190:x, comp examene::::190:x, comp cautare::::190:x}, par t:l::p {comp cantina::::190:x, comp iesire::::190:x}}, space ::9:x}}"
+					"$verticalGroup": "par l {seq l {space :p:92:p, comp cautare:::p::p, space :::p, comp orar:::p::p, space :::p, comp examene:::p::p, space :::p, comp cantina:::p::p, space :::p, comp iesire:::p::p, space ::121:x}}"
+				} ) {
+					name: "panel1"
+					"border": new javax.swing.border.EtchedBorder( 1, null, null )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "orar"
+						"text": "Orar"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "orar", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "examene"
+						"text": "Examene"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "examene", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cantina"
+						"text": "Cantina"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cantina", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "iesire"
+						"text": "Iesire"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "iesire", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cautare"
+						"text": "Cautare"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "orar", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cautare", true ) )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "left"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/bk3.jpg" )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "right"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 750, 425 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane4::t::565:x}"
+			"$verticalGroup": "par l {seq t {space :::x, comp scrollPane4:::p::p, space :::p}}"
+		} ) {
+			name: "PanelExamene"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane4"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table3"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "19.01.2023" )
+							add( "MIP" )
+						} )
+						add( new java.util.Vector {
+							add( "23.01.2023" )
+							add( "LFC" )
+						} )
+						add( new java.util.Vector {
+							add( "26.01.2023" )
+							add( "MG" )
+						} )
+						add( new java.util.Vector {
+							add( "29.01.2023" )
+							add( "SMC" )
+						} )
+						add( new java.util.Vector {
+							add( "03.02.2023" )
+							add( "AG" )
+						} )
+						add( new java.util.Vector {
+							add( "09.02.2023" )
+							add( "BD" )
+						} )
+					}, new java.util.Vector {
+						add( "Data" )
+						add( "Materie" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 540, 2063 )
+			"size": new java.awt.Dimension( 565, 415 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::p, comp scrollPane3::::488:x, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane3:::p::p, space :::x}}"
+		} ) {
+			name: "panelCantina"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table2"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "Luni" )
+							add( "Supa crema de legume" )
+							add( "3,60" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Ciorba radauteana" )
+							add( "5,00" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Mici" )
+							add( "2,60" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Piure de cartofi cu unt" )
+							add( "2,60" )
+						} )
+						add( new java.util.Vector {
+							add( "Marti" )
+							add( "Salata boeuf" )
+							add( "3,40" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Spaghete milaneze" )
+							add( "4,30" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Supa de rosii cu taitei" )
+							add( "5,00" )
+						} )
+						add( new java.util.Vector {
+							add( "Miercuri" )
+							add( "Iahnie de fasole" )
+							add( "2,60" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Cartofi gratinati cu broccoli" )
+							add( "2,90" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Gulas cu piept de curcan" )
+							add( "6,40" )
+						} )
+						add( new java.util.Vector {
+							add( "Joi" )
+							add( "Ostropel pulpa de porc" )
+							add( "3,30" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Gratar cotlet de porc" )
+							add( "3,90" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Budinca de vanilie" )
+							add( "1,90" )
+						} )
+						add( new java.util.Vector {
+							add( "Vineri" )
+							add( "Ciorba de burta" )
+							add( "6,20" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Sarmale cu mamaliguta" )
+							add( "4,80" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "Musaca de vita" )
+							add( "4,20" )
+						} )
+					}, new java.util.Vector {
+						add( "Ziua" )
+						add( "Meniu" )
+						add( "Pret" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 2058 )
+			"size": new java.awt.Dimension( 500, 420 )
+		} )
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp scrollPane2::l::595:x, seq t {space ::216:x, comp label2:::p:196:p, space :p:183:p}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp label2::::32:x, space :::p, comp scrollPane2:::p:306:p}}"
+		} ) {
+			name: "panel3"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "08:00-10:00 LFC" )
+							add( "08:00-10:00 SMC" )
+							add( "14:00-16:00 LFC" )
+							add( "12:00-14:00 MIP" )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( "16:00-18:00 BD" )
+							add( "12:00-16:00 SMC" )
+							add( "18:00-20:00 MIP" )
+							add( "14:00-16:00 AG" )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( "16:00-18:00 AG" )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "Luni" )
+						add( "Marti" )
+						add( "Miercuri" )
+						add( "Joi" )
+						add( "Vineri" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Orar semestrul I 2021-2022"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 2494 )
+			"size": new java.awt.Dimension( 595, 350 )
+		} )
+	}
+}

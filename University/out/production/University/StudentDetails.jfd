@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:25:p, comp panel1:::p::p, space ::18:x}}"
+			"$verticalGroup": "par l {seq l {space :p:38:p, comp panel1:::p::p, space ::60:x}}"
+		} ) {
+			name: "this2"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:15:p, par l {seq {par l {seq l {comp prenume:::p:105:p, space :::p, comp campprenume:::p:198:p}, seq l {comp nume:::p:105:p, space :::p, comp campnume:::p:198:p}, seq l {comp cnp:::p:105:p, space :::p, comp campcnp:::p:198:p}}, space :59::x}, seq {par l {seq l {comp email:::p:105:p, space :::p, comp campemail:::p:198:p}, seq l {comp status:::p:105:p, space :::p, comp comboBox1:::p:198:p}, seq t {comp grupa:::p:105:p, space :::p, comp campgrupa:::p:198:p}}, space :0:256:x}}}, seq t {space ::146:x, comp button1:::p:107:p, space :p:72:p, comp button5:::p:107:p, space :p:148:p}}"
+				"$verticalGroup": "par l {seq l {space :p:61:p, par t {comp nume:::p:30:p, comp campnume:::p::p}, space :::p, par b {comp campprenume::b:p::p, comp prenume::b:p:30:p}, space :::p, par b {comp campcnp::b:p::p, comp cnp::b:p:30:p}, space :::p, par b {comp email::b:p:30:p, comp campemail::b:p::p}, space :::x, par b {comp comboBox1::b:p::p, comp status::b:p:30:p}, space :::p, par b {comp campgrupa::b:p::p, comp grupa::b:p:30:p}, space :p:30:p, par b {comp button1::b:p:41:p, comp button5::b:p:41:p}, space :p:15:p}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( null, "Date student", 2, 0 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nume"
+					"text": "Nume:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "prenume"
+					"text": "Prenume:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cnp"
+					"text": "CNP:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "email"
+					"text": "E-mail:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "grupa"
+					"text": "Grupa:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "status"
+					"text": "Status:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "campnume"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "campnume", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "campprenume"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "campcnp"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "campemail"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "campgrupa"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBox1"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Activ"
+						addElement( "Activ" )
+						addElement( "Inactiv" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "Iesire"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/logout.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Update"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/update icon.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "update", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 635, 510 )
+		} )
+	}
+}

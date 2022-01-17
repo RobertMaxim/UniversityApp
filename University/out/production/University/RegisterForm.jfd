@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:14:p, comp panel1:::p::p, space ::14:x}}"
+			"$verticalGroup": "par l {seq t {space ::14:x, comp panel1:::p::p, space :p:16:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:38:p, par l {seq l {par l {seq l {comp cnp:::p:114:p, space :::p, comp cnpp:::p:194:p}, seq l {comp email:::p:114:p, space :::p, comp emaill:::p:194:p}, seq l {comp cfpassword:::p:114:p, space :::p, comp cpw:::p:194:p}, seq l {comp password:::p:114:p, space :::p, comp pw:::p:194:p}, seq l {comp username:::p:114:p, space :::p, comp usern:::p:194:p}, seq l {comp name:::p:114:p, space :::p, comp nume:::p:194:p}}, space ::183:x}, seq l {par t {comp button1:::p::p, comp group:::p:114:p}, par l {seq {space :::p, comp grp:::p:194:p}, seq t {space ::194:x, comp button2:::p::p, space :p:111:p}}}}}}"
+				"$verticalGroup": "par l {seq t {space ::22:x, par b {comp name::b:p:25:p, comp nume::b:p::p}, space :::p, par l {comp username:::p:25:p, comp usern:::p::p}, space :::p, par l {comp password:::p:25:p, comp pw:::p::p}, space :::p, par l {comp cfpassword:::p:25:p, comp cpw:::p::p}, space :p:6:p, par b {comp email::b:p:25:p, comp emaill::b:p::p}, space :::p, par b {comp cnp::b:p:25:p, comp cnpp::b:p::p}, space :::p, par b {comp group::b:p:25:p, comp grp::b:p::p}, space s:::p, par b {comp button1::b:p::p, comp button2::b:p::p}, space :p:9:p}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "Register Information" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "name"
+					"text": "Name:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "username"
+					"text": "Username:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "password"
+					"text": "Password:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cfpassword"
+					"text": "Confirm Password:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "email"
+					"text": "Email:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cnp"
+					"text": "CNP:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "group"
+					"text": "Group:"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nume"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "usern"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "pw"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "cpw"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "emaill"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "cnpp"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "grp"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Save"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "Inregistreaza", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Cancel"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancel", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 575, 410 )
+		} )
+	}
+}

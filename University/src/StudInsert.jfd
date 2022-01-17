@@ -1,0 +1,94 @@
+JFDML JFormDesigner: "7.0.5.0.404" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:21:p, comp panel1:::p::p, space ::19:x}}"
+			"$verticalGroup": "par l {seq t {space :::x, comp panel1:::p::p, space :p:16:p}}"
+		} ) {
+			name: "this2"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:25:p, par l {seq l {par l {seq {comp label5:::p:98:p, space :::p, comp cnp:::p:152:p}, seq {comp label1:::p:98:p, space :::p, comp nume:::p:152:p}, seq {par l {seq l {comp label3:::p:98:p, space :::p, comp grupa:::p:152:p}, seq l {comp label2:::p:98:p, space :::p, comp prenume:::p:152:p}, seq l {comp label4:::p:98:p, space :::p, comp email:::p:152:p}}, space :p:78:p, par t {comp button2:::p:118:p, comp button1:::p:118:p}}}, space ::136:x}, seq l {comp label6:::p:98:p, space :::p, comp status:::p::p, space ::284:x, comp button3:::p::p, space :p:31:p}}}}"
+				"$verticalGroup": "par l {seq l {space :p:28:p, par l {comp label1:::p:33:p, comp nume:::::x}, space :::p, par b {comp label2::b:p:33:p, comp prenume::b:p:33:p}, space :::p, par b {comp label3::b:p:33:p, comp grupa::b:p:33:p, comp button1::b:p::p}, space :::p, par b {comp label4::b:p:33:p, comp email::b:p:33:p, comp button2::b:p::p}, space :::p, par b {comp label5::b:p:33:p, comp cnp::b:p:33:p}, par l {seq {space :::p, par b {comp label6::b:p:33:p, comp status::b:p::p}, space ::48:x}, seq t {space ::33:x, comp button3:::p::p, space :p:24:p}}}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( null, "Student Insert", 2, 0 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Nume:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Prenume:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Grupa:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": "E-mail:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "CNP:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Status:"
+					"horizontalAlignment": 0
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nume"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "prenume"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "grupa"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "email"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "cnp"
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "status"
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "Active"
+						addElement( "Active" )
+						addElement( "Inactive" )
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Adauga"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/Save-icon.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ButonAdauga", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Renunta"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/delete_16x16.gif" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clear", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Iesire"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/Images/erase-128.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "iesirebuton", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 665, 395 )
+		} )
+	}
+}
